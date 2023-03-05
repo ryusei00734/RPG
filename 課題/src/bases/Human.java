@@ -23,8 +23,8 @@ public abstract class Human extends Living {
 
 		// 自分の攻撃力を1だけ減らす,新しい攻撃力としてセット
 		int newOf = getOffensive() - 1;
-		target.setOffensive(newOf);
+		this.setOffensive(newOf);
 		// コンソールにステータスを表示
-		System.out.println();
+		System.out.println("「" + this.name + "」" + "が「" + this.weapon + "」で攻撃！「" + target.name  + "」に" + damage + "のダメージを与えた。しかし自分の攻撃力も1減少した。");
 	}
 }
